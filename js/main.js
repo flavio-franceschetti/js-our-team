@@ -32,6 +32,9 @@ const teamMembers = [
   },
 ];
 
+// estrapolo l'elemento html container per inserire i vari valori degli ogetti nel DOM
+const valuesContainer = document.querySelector(".container");
+
 // creo un ciclo for per estrapolare gli ogetti dell'array
 for (let i = 0; i < teamMembers.length; i++) {
   let member = teamMembers[i];
@@ -48,4 +51,9 @@ for (let i = 0; i < teamMembers.length; i++) {
     "Ruolo: " + memberRole,
     "Immagine: " + memberImg
   );
+
+  // dopo aver stampato in console i valori creo degli elementi html dove inserirò i valori
+  valuesContainer.innerHTML += `<div class="member">Nome e cognome: ${memberName}</div>`;
+  valuesContainer.innerHTML += `<div class="member">Ruolo operativo: ${memberRole}</div>`;
+  valuesContainer.innerHTML += `<div class="member">Immagine: ${memberImg}</div>`;
 }
