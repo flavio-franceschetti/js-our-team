@@ -57,7 +57,7 @@ for (let i = 0; i < teamMembers.length; i++) {
   <ul>
     <li>Nome e cognome: ${memberName}</li>
     <li>Ruolo operativo: ${memberRole}</li> 
-    <li>Immagine: ${memberImg}</li>
+    <li><img src="img/${memberImg}" alt="team member" /></li>
   </ul>
   </div>`;
 }
