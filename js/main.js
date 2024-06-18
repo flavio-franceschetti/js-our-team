@@ -52,8 +52,12 @@ for (let i = 0; i < teamMembers.length; i++) {
     "Immagine: " + memberImg
   );
 
-  // dopo aver stampato in console i valori creo degli elementi html dove inserirò i valori
-  valuesContainer.innerHTML += `<div class="member">Nome e cognome: ${memberName}</div>`;
-  valuesContainer.innerHTML += `<div class="member">Ruolo operativo: ${memberRole}</div>`;
-  valuesContainer.innerHTML += `<div class="member">Immagine: ${memberImg}</div>`;
+  // dopo aver stampato in console i valori una lista degli  html dove inserirò i valori
+  valuesContainer.innerHTML += `<div class="member">
+  <ul>
+    <li>Nome e cognome: ${memberName}</li>
+    <li>Ruolo operativo: ${memberRole}</li> 
+    <li>Immagine: ${memberImg}</li>
+  </ul>
+  </div>`;
 }
